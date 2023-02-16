@@ -28,7 +28,7 @@ public class SecurityConfig {
                 .oauth2ResourceServer(httpSecurityOAuth2ResourceServerConfigurer ->
                         httpSecurityOAuth2ResourceServerConfigurer
                                 .jwt()
-
+                                // realiza o mapeamento do token JWT para que o Spring Security leia as Roles do JWT corretamente
                                 .jwtAuthenticationConverter(jwtAuthenticationConverter()))
                 .logout().and()
                 .build();
