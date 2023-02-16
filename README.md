@@ -25,6 +25,22 @@ completo que tem seus recursos protegidos via OAuth2;
 desde que ele utilize a autenticação via Keycloak e autorização via OAuth2 + JWT Bearer Token.
  
 
+## ETAPAS PARA EXECUÇÃO DO PROJETO 
+
+1. Criar o banco <b>spring-usuarios</b> ou outro nome qualquer e renomear a propriedade <b>app.datasource.db</b>
+no arquivo application-dev.yml para corresponder com o nome do banco criado;
+
+2. Configurar o Host e a porta do Keycloak no arquivo application-dev.yml;
+
+3. Criar o Realm no Keycloak e ajustar a propriedade <b>app.keycloak.realm</b> para corresponder com o Realm criado;
+
+4. Criar o Client no Keycloak;
+
+5. Criar as Roles ("ADMIN", "USER", "VIEW") no respectivo Client, Aba Roles, de modo a corresponder com o mapeamento da 
+classe SecurityConfig.java;
+
+6. Criar um mapper no Client e atribuir um nome qualquer a ele, alterando a propriedade "Token Claim Name = roles";
+
 ### Reference Documentation
 
 For further reference, please consider the following sections:
