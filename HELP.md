@@ -2,7 +2,7 @@
 
 Projeto de exemplo do uso do Spring Security + OAuth2 para prover segurança em microsserviços.
 
-## Getting Started
+## Getting Started:
 
 1. O presente projeto é configurado como um Resource Server protegido por Autenticação via Keycloak e 
 autorização via OAuth2 + JWT. Algumas APIs estão configuradas de modo a demonstrar o uso dos perfis 
